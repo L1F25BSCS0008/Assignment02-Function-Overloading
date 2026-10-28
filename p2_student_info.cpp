@@ -1,7 +1,3 @@
-#include <iostream>
-#include <string>
-using namespace std;
-
 // Answer 1: We dont have exact match as there is no function that can handle
 // two character values but if there is no exact match the compiler chooses promotion and here
 // printInfo(string name, int rollNo) runs because char 'B'
@@ -14,6 +10,9 @@ using namespace std;
 // Answer 3: These two versions differ only in parameter order:
 // printInfo(string name, int rollNo)
 // printInfo(int rollNo, string name)
+#include <iostream>
+#include <string>
+using namespace std;
 void printInfo(string name) {
     cout << "Name: " << name << endl;
 }
